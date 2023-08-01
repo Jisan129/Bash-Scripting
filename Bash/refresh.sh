@@ -1,6 +1,6 @@
 
 # Save the password in a variable (not recommended, just for example purposes)
-PASSWORD="reve"
+PASSWORD="122897"
 
 # Run sudo to extend the timeout and cache the password
 echo "$PASSWORD" | sudo -Sv
@@ -10,5 +10,4 @@ sudo apt update
 sudo apt upgrade -y
 
 
-chromium-browser
 
