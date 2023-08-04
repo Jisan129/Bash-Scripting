@@ -3,25 +3,75 @@
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 import os
+import re
+
+
+def checkMime(file):
+    photosMime = r'\.(jpg|jpeg|png|hexc)'
+    documentsMime = r'\.(pdf|xdl|odt|xml)'
+    audioMime = r'\.(wav|mp3|mp4)'
+    root = os.getcwd()
+    if re.search(photosMime, file):
+        command = f"mv {file} {photos}"
+        os.system(command)
+        print(os.system(command))
+
+
+
+    elif re.search(documentsMime, file):
+        command = f"mv {file} {documents}"
+        print(os.system(command))
+
+    elif re.search(audioMime, file):
+        command = f"mv {file} {audio}"
+        os.system(command)
+
+        print(file)
+
+
+    else:
+        print("nothing")
+
+
+def checkFileTypes(list):
+    i = 0
+
+    while i < len(list):
+        print(list[i])
+        mimeType = checkMime(list[i])
+        i += 1;
+
 
 def print_hi(name):
+    list_of_files = [];
     # Use a breakpoint in the code line below to debug your script.
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-    current_dir=os.getcwd()
+    current_dir = os.getcwd()
 
-    '''os.system(f'mkdir {current_dir}/Photos')
-    os.system(f'mkdir {current_dir}/Deb')
-    os.system(f'mkdir {current_dir}/pdf')'''
-    for root,files,dirs in os.walk(current_dir):
+    for root, dirs, files in os.walk(current_dir):
         for file in files:
-            temp=os.path.join(root,file)
-            print(temp)
+            file_path = os.path.join(root, file)
+            file_path = str(file_path)
+            list_of_files.append(file_path)
+
+    checkFileTypes(list_of_files);
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
+    current_dir = os.getcwd()
+
+    photos = os.system(f'mkdir {current_dir}/Photos')
+    photos = str(photos)
+
+    documents = os.system(f'mkdir {current_dir}/Documents')
+    documents = str(documents)
+    audio = os.system(f'mkdir {current_dir}/Audio')
+    audio = str(audio)
+
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
-#get  directory
-#create directorry
-#move
+# get  directory
+# create directorry
+# move
