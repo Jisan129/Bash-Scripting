@@ -10,3 +10,4 @@ read -s password
 
 # Run the sudo command with the -S option to read the password from standard input
 echo "$password" | sudo -S your_command_here
+chmod u+x refresh.sh

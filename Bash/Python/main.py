@@ -60,14 +60,13 @@ def print_hi(name):
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     current_dir = os.getcwd()
-
-    photos = os.system(f'mkdir {current_dir}/Photos')
-    photos = str(photos)
-
-    documents = os.system(f'mkdir {current_dir}/Documents')
-    documents = str(documents)
-    audio = os.system(f'mkdir {current_dir}/Audio')
-    audio = str(audio)
+    temp=str(current_dir)
+    photos=str(temp+'/Photos')
+    documents=str(temp+'/Documents')
+    audio=str(temp+'/Audio')
+    os.system(f'mkdir {photos}')
+    os.system(f'mkdir {documents}')
+    os.system(f'mkdir {audio}')
 
     print_hi('PyCharm')
 
