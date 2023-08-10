@@ -8,8 +8,8 @@ import re
 
 def checkMime(file):
     photosMime = r'\.(jpg|jpeg|png|hexc)'
-    documentsMime = r'\.(pdf|xdl|odt|xml|deb)'
-    audioMime = r'\.(wav|mp3|mp4)'
+    documentsMime = r'\.(pdf|xdl|odt|xml|deb|oxt|gz|zip|exe|torrent)'
+    audioMime = r'\.(wav|mp3|mp4|webm)'
     root = os.getcwd()
     if re.search(photosMime, file):
         command = f"mv {file} {photos}"
@@ -48,10 +48,11 @@ def print_hi(name):
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
     current_dir = os.getcwd()
 
-    for root, dirs, files in os.walk(current_dir):
-        for file in files:
-            file_path = os.path.join(root, file)
-            file_path = str(file_path)
+    
+
+    for file in os.listdir(current_dir):
+        if os.path.isfile(os.path.join(current_dir, file)):
+            file_path = os.path.join(current_dir, file)
             list_of_files.append(file_path)
 
     checkFileTypes(list_of_files);

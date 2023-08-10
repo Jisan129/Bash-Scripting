@@ -97,9 +97,9 @@ Converted ANSI to Unicode
 Working on dynamicly fetching data from document to backend
 
 
-python3 /usr/lib/python3.10/unodit/unodit-master/unodit.py -m 'dialogs_create' -d '/home/jisan/.config/4/user/Scripts/python/addon' -a 'Test_dialogs'
-python3 /usr/lib/python3.10/unodit/unodit-master/unodit.py -m 'dialogs_files'  -d  '/home/jisan/.config/4/user/Scripts/python/addon' -a 'Test_dialogs'
-python3 /usr/lib/python3.10/unodit/unodit-master/unodit.py -m 'dialogs_oxt'  -d  '/home/jisan/.config/4/user/Scripts/python/addon' -a 'Test_dialogs'
+python3 /home/reve/Desktop/unodit-master/unodit.py -m 'dialogs_create' -d '/home/jisan/.config/4/user/Scripts/python/addon' -a 'STT'
+python3 /home/reve/Desktop/unodit-master/unodit.py -m 'dialogs_files'  -d  '/home/jisan/.config/4/user/Scripts/python/addon' -a 'STT'
+python3 /home/reve/Desktop/unodit-master/unodit.py -m 'dialogs_oxt'  -d  '/home/jisan/.config/4/user/Scripts/python/addon' -a 'STT'
 
 
 python3 /home/reve/Desktop/unodit-master/unodit.py -m 'dialogs_create' -d '/home/reve/.config/4/user/Scripts/python/third' -a 'Test_dialogs'
@@ -109,27 +109,3 @@ python3 /home/reve/Desktop/unodit-master/unodit.py -m 'dialogs_oxt'  -d  '/home/
 
 os.system("pip install pydub")
 
-1.Ongoing UI design
-2.Fixed libreoffice extension position
-3.Completed fetch and set data on libreoffice writer 
-4.Started working on api connection
-
-
-Assalamu Alaikum bhai , 
-I hope you're doing well. I joined the company nearly a month ago, but I haven't received any updates regarding my bank account setup.
-Could you please provide me with an update on this matter? 
-
-
-Started working on UI improvement and small functionalies fixes in libre office writer tts 
-
-
-polished the existing TTS libre office writer extension UI 
-
-Tested the extension in both windows and linux
-
-Fixed the API call options and made it dynamic
-
-Started packaging and deployment process of the extesnion
-
-
-There maybe or
