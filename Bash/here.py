@@ -68,13 +68,13 @@ python3 /usr/lib/python3.10/unodit/unodit-master/unodit.py -m 'script_convert' -
 
 
 python3 /home/reve/Desktop/unodit-master/unodit.py  -m 'script_convert' -d '/home/reve/.config/4/user/Scripts/python/previous' -f '/home/reve/Documents/tts_refined.xdl' -a 'ttsfinal'
-python3 /home/reve/Desktop/unodit-master/unodit.py -m 'script_files'   -d '/home/reve/.config/4/user/Scripts/python/previous' -f '/home/reve/Documents/tts_refined.xdl' -a 'ttsfinal'
+python3 /home/reve/Desktop/unodit-master/unodit.py  -m 'script_files'   -d '/home/reve/.config/4/user/Scripts/python/previous' -f '/home/reve/Documents/tts_refined.xdl' -a 'ttsfinal'
 python3 /home/reve/Desktop/unodit-master/unodit.py  -m 'script_oxt'     -d '/home/reve/.config/4/user/Scripts/python/previous' -f '/home/reve/Documents/tts_refined.xdl' -a 'ttsfinal'
 
 
-python3 /home/reve/Desktop/unodit-master/unodit.py  -m 'script_convert' -d '/home/reve/.config/4/user/Scripts/python/third' -f '/home/reve/Documents/ttss.xdl' -a 'ttss'
-python3 /home/reve/Desktop/unodit-master/unodit.py -m 'script_files'   -d '/home/reve/.config/4/user/Scripts/python/third' -f '/home/reve/Documents/ttss.xdl' -a 'ttss'
-python3 /home/reve/Desktop/unodit-master/unodit.py  -m 'script_oxt'     -d '/home/reve/.config/4/user/Scripts/python/third' -f '/home/reve/Documents/ttss.xdl' -a 'ttss'
+python3 /home/reve/Desktop/unodit-master/unodit.py  -m 'script_convert' -d '/home/reve/.config/4/user/Scripts/python/third' -f '/home/reve/Documents/stt_v1.xdl' -a 'stt_v1'
+python3 /home/reve/Desktop/unodit-master/unodit.py -m 'script_files'    -d '/home/reve/.config/4/user/Scripts/python/third' -f '/home/reve/Documents/stt_v1.xdl' -a 'stt_v1'
+python3 /home/reve/Desktop/unodit-master/unodit.py  -m 'script_oxt'     -d '/home/reve/.config/4/user/Scripts/python/third' -f '/home/reve/Documents/stt_v1.xdl' -a 'stt_v1'
 
 
 python3 /usr/lib/python3.10/unodit/unodit-master/unodit.py -m 'script_convert' -d '/home/jisan/.config/4/user/Scripts/python/addon' -f '/home/jisan/Documents/tts_close_button.xdl' -a 'ttss'

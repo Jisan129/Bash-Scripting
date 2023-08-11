@@ -8,3 +8,8 @@ for file in os.listdir(current_dir):
 
 for file_path in list_of_files:
     print(file_path)
+
+
+
+cd Notion-linux-x64
+./Notion
