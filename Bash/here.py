@@ -72,9 +72,9 @@ python3 /home/reve/Desktop/unodit-master/unodit.py  -m 'script_files'   -d '/hom
 python3 /home/reve/Desktop/unodit-master/unodit.py  -m 'script_oxt'     -d '/home/reve/.config/4/user/Scripts/python/previous' -f '/home/reve/Documents/tts_refined.xdl' -a 'ttsfinal'
 
 
-python3 /home/reve/Desktop/unodit-master/unodit.py  -m 'script_convert' -d '/home/reve/.config/4/user/Scripts/python/third' -f '/home/reve/Documents/stt_v1.xdl' -a 'stt_v1'
-python3 /home/reve/Desktop/unodit-master/unodit.py -m 'script_files'    -d '/home/reve/.config/4/user/Scripts/python/third' -f '/home/reve/Documents/stt_v1.xdl' -a 'stt_v1'
-python3 /home/reve/Desktop/unodit-master/unodit.py  -m 'script_oxt'     -d '/home/reve/.config/4/user/Scripts/python/third' -f '/home/reve/Documents/stt_v1.xdl' -a 'stt_v1'
+python3 /home/reve/Desktop/unodit-master/unodit.py  -m 'script_convert' -d '/home/reve/.config/4/user/Scripts/python/STTT' -f '/home/reve/Documents/stt_v1.xdl' -a 'stt_v1'
+python3 /home/reve/Desktop/unodit-master/unodit.py -m 'script_files'    -d '/home/reve/.config/4/user/Scripts/python/STTT' -f '/home/reve/Documents/stt_v1.xdl' -a 'stt_v1'
+python3 /home/reve/Desktop/unodit-master/unodit.py  -m 'script_oxt'     -d '/home/reve/.config/4/user/Scripts/python/STTT' -f '/home/reve/Documents/stt_v1.xdl' -a 'stt_v1'
 
 
 python3 /usr/lib/python3.10/unodit/unodit-master/unodit.py -m 'script_convert' -d '/home/jisan/.config/4/user/Scripts/python/addon' -f '/home/jisan/Documents/tts_close_button.xdl' -a 'ttss'
@@ -109,3 +109,33 @@ python3 /home/reve/Desktop/unodit-master/unodit.py -m 'dialogs_oxt'  -d  '/home/
 
 os.system("pip install pydub")
 
+
+python3 /home/reve/Desktop/unodit-master/unodit.py -m 'script_convert' -d '/home/reve/Downloads/STT1' -f '/home/reve/Documents/stt_v1.xdl' -a 'stt_writer'
+python3 /home/reve/Desktop/unodit-master/unodit.py -m 'script_files'   -d '/home/reve/Downloads/STT1' -f '/home/reve/Documents/stt_v1.xdl' -a 'stt_writer'
+python3 /home/reve/Desktop/unodit-master/unodit.py -m 'script_oxt'     -d '/home/reve/Downloads/STT1'  -f '/home/reve/Documents/stt_v1.xdl' -a 'stt_writer'
+
+
+
+python3 /home/reve/Desktop/unodit-master/unodit.py -m 'script_convert' -d '/media/reve/New Volume/Unodit/TTS-Libre/tts_libre_office_text_document_addin2' -f '/home/reve/Documents/tts_refined.xdl' -a 'tts_writer'
+python3 /home/reve/Desktop/unodit-master/unodit.py -m 'script_files'   -d '/media/reve/New Volume/Unodit/TTS-Libre/tts_libre_office_text_document_addin2' -f '/home/reve/Documents/tts_refined.xdl' -a 'tts_writer'
+
+python3 /home/reve/Desktop/unodit-master/unodit.py -m 'script_oxt'   -d '/media/reve/New Volume/Unodit/TTS-Libre/tts_libre_office_text_document_addin2' -f '/home/reve/Documents/tts_refined.xdl' -a 'tts_writer'
+
+started working on streming feature of STT microsoft office word addin
+
+cd
+
+soffice "--accept=socket,host=127.0.0.1,port=2002,tcpNoDelay=1;urp;StarOffice.ComponentContext" --norestore
+
+
+python3 /home/reve/Desktop/unodit-master/unodit.py -m 'script_convert' -d '/media/reve/New Volume/Unodit/TTS-Libre/tts_libre_office_text_document_addin2' -f '//media/reve/New Volume/Text' -a 'tts_writer'
+python3 /home/reve/Desktop/unodit-master/unodit.py -m 'script_files'   -d '/media/reve/New Volume/Unodit/TTS-Libre/tts_libre_office_text_document_addin2' -f '/home/reve/Documents/tts_refined.xdl' -a 'tts_writer'
+
+python3 /home/jisananm/Desktop/unodit-master/unodit.py -m 'script_convert'   -d '/media/jisananm/New Volume/Test2' -f '/home/jisananm/Documents/image.xdl' -a 'tts_image'
+python3 /home/jisananm/Desktop/unodit-master/unodit.py -m 'script_files'     -d '/media/jisananm/New Volume/Test2' -f '/home/jisananm/Documents/image.xdl' -a 'tts_image'
+python3 /home/jisananm/Desktop/unodit-master/unodit.py -m 'script_oxt'       -d '/media/jisananm/New Volume/Test2' -f '/home/jisananm/Documents/image.xdl' -a 'tts_image'
+
+/media/reve/New Volume/Text
+
+/home/reve/Downloads/download.png 
+/media/jisananm/New Volume/Test2/Images/image.png
