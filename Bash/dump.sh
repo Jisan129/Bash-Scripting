@@ -9,10 +9,7 @@ options.binary_location = binary_location
 driver = webdriver.Chrome(executable_path=driver_location,options=options)
 driver.get("https://www.youtube.com/watch?v=67h3IT2lm40")
 
-connected pyuno with libreoffice
-created extension with pyuno
-added and tested extension with pyuno
-Started developing extension UI as requirement
+
 
 python3 /usr/lib/python3.10/unodit/unodit-master/unodit.py -m 'dialogs_files' -d '/home/jisan/.config/libreoffice/4/user/Scripts/python/TestLib' -a 'Test_dialogs'
 
@@ -158,6 +155,7 @@ python3 /home/jisananm/Desktop/unodit-master/unodit.py -m 'script_oxt' -d '/medi
 				</node>
 			</node>
 		</node>
+
 
 
 

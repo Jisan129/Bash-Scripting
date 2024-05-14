@@ -1,4 +1,4 @@
-cd /media/jisananm/New Volume/Test/pycharm-professional-2023.2.1/pycharm-2023.2.1
+cd /media/jisananm/New Volume1/Test/pycharm-professional-2023.2.1/pycharm-2023.2.1
 sh pycharm.sh
 
 #sudo mv bluetooth.sh /usr/local/bin/
